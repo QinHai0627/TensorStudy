@@ -1,10 +1,5 @@
 # encoding: utf-8
 """
-@author: monitor1379 
-@contact: yy4f5da2@hotmail.com
-@site: www.monitor1379.com
-@version: 1.0
-@license: Apache Licence
 @file: mnist_decoder.py
 @time: 2016/8/16 20:03
 对MNIST手写数字数据文件转换为bmp图片文件格式。
