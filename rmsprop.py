@@ -60,7 +60,7 @@ def load_data(data_folder):
         test_labels = np.frombuffer(lbpath.read(),np.uint8,offset=8)
         
     with gzip.open(paths[3],'rb') as imgpath:
-        test_labels=np.frombuffer(imgpath.read(),np.uint8,offset=16).reshape(len(test_labels),28,28)
+        test_images=np.frombuffer(imgpath.read(),np.uint8,offset=16).reshape(len(test_labels),28,28)
 
     return (train_images,train_labels),(test_images,test_labels)
 
