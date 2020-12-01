@@ -35,14 +35,14 @@ import numpy as np
 import struct
 import matplotlib.pyplot as plt
 # 训练集文件
-train_images_idx3_ubyte_file = 'C:/Users/QinHai/SpyderWorkspace/data/train-images.idx3-ubyte'
+train_images_idx3_ubyte_file = 'C:/Users/QinHai/Downloads/Compressed/train-images.idx3-ubyte'
 # 训练集标签文件
-train_labels_idx1_ubyte_file = 'C:/Users/QinHai/SpyderWorkspace/data/train-labels.idx1-ubyte'
+train_labels_idx1_ubyte_file = 'C:/Users/QinHai/Downloads/Compressed/train-labels.idx1-ubyte'
  
 # 测试集文件
-test_images_idx3_ubyte_file = 'C:/Users/QinHai/SpyderWorkspace/data/t10k-images-idx3-ubyte.gz'
+test_images_idx3_ubyte_file = 'C:/Users/QinHai/Downloads/Compressed/t10k-images-idx3-ubyte.gz'
 # 测试集标签文件
-test_labels_idx1_ubyte_file = 'C:/Users/QinHai/SpyderWorkspace/data/t10k-labels.idx1-ubyte'
+test_labels_idx1_ubyte_file = 'C:/Users/QinHai/Downloads/Compressed/t10k-labels.idx1-ubyte'
  
  
 def decode_idx3_ubyte(idx3_ubyte_file):
