@@ -1,2 +1,24 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+ex41 <- read.csv("C:\\Users\\QinHai\\Desktop\\ex4.1.csv")
+ex41 <- ex41[-21,-1]
+
+#系统聚类：Euclidean
+d <- dist(ex41,method = "euclidean",diag = T,upper = F,p=2)
+h <- hclust(d,method = "single")
+re1 <- rect.hclust(h,k=5,border = "red")
+re1
+plot(h)
+
+#系统聚类：minkowski
+d <- dist(ex41,method = "minkowski",diag = T,upper = F,p=4)
+h <- hclust(d,method = "single")
+re2 <- rect.hclust(h,k=5,border = "red")
+re2
+plot(h)
+
+#K-Means聚类分析
+km <- kmeans(ex41,4,nstart = 3,algorithm = "Hartigan-Wong")
+km
+sort(km$cluster)
